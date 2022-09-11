@@ -43,11 +43,79 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/reName"
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="User Full Name"
+                        android:textSize="25dp"/>
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/rePhone"
+                        android:text="Phone Number"
+                        android:textSize="25dp"
+                        android:textColor="@color/cardview_dark_background"/>
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/reCity"
+                        android:text="City"
+                        android:textSize="25dp"
+                        android:textColor="@color/cardview_dark_background"/>
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/reEmail"
+                        android:text="E-mail"
+                        android:textSize="25dp"
+                        android:textColor="@color/cardview_dark_background"/>
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/rePassword"
+                        android:text="Password"
+                        android:textSize="25dp"
+                        android:textColor="@color/cardview_dark_background"/>
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/recPassword"
+                        android:text="Confirm Password"
+                        android:textSize="25dp"
+                        android:textColor="@color/cardview_dark_background"/>
+
                     <Button
                         android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Login"/>
+                        android:layout_width="200dp"
+                        android:layout_height="65dp"
+                        android:text="Register"
+                        android:textSize="25dp"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
