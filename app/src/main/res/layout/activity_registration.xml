@@ -42,7 +42,8 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:layout_behavior = "@string/hide_bottom_view_on_scroll_behavior">
 
                     <EditText
                         android:layout_width="350dp"
@@ -52,6 +53,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         android:id="@+id/reName"
                         android:textColor="@color/cardview_dark_background"
+                        android:defaultFocusHighlightEnabled="true"
                         android:text="User Full Name"
                         android:textSize="25dp"/>
 
@@ -65,16 +67,13 @@
                         android:text="Phone Number"
                         android:textSize="25dp"
                         android:textColor="@color/cardview_dark_background"/>
-
-                    <EditText
+                    <Spinner
                         android:layout_width="350dp"
                         android:layout_height="80dp"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         android:id="@+id/reCity"
-                        android:text="City"
-                        android:textSize="25dp"
                         android:textColor="@color/cardview_dark_background"/>
 
                     <EditText
@@ -117,6 +116,7 @@
                         android:text="Register"
                         android:textSize="25dp"/>
                 </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
 
