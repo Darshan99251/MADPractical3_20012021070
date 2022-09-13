@@ -59,6 +59,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:startIconDrawable="@drawable/ic_baseline_email_24"
+                        android:focusable="true"
                         android:hint="Email">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -114,4 +115,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavigationView"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:menu="@menu/navigation_menu"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

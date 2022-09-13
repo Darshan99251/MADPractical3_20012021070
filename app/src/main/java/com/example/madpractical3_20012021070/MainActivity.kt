@@ -17,15 +17,15 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-       /* binding.BottomNavigationView.id = R.id.bottom_nav_reg
-        binding.BottomNavigationView.setOnItemSelectedListener { it ->
-            when(it.itemId){
+        binding.BottomNavigationView.id = R.id.bottom_nav_reg
+        binding.BottomNavigationView.setOnItemSelectedListener { it2 ->
+            when(it2.itemId) {
                 R.id.bottom_nav_reg -> {
                     Intent(this, RegistrationActivity::class.java).also { startActivity(it) }
                 }
-                return@setOnItemSelectedListener true
             }
-        }*/
+            return@setOnItemSelectedListener true
+        }
 
         binding.BottomNavigationView.id = R.id.bottom_nav_login
         binding.BottomNavigationView.setOnItemSelectedListener { it1 ->
